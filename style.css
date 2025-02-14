@@ -7,6 +7,18 @@ body {
     text-align: center;
 }
 
+/* Header (Sticky Navigation) */
+header {
+    background: #222;
+    color: white;
+    padding: 15px 0;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
 /* Navigation Bar */
 nav {
     background-color: #ff4d6d;
