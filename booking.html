@@ -3,50 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Book a Companion</title>
+    <title>Book a Companion | Relationship Rental</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Book a Companion</h1>
-    <nav>
-        <a href="index.html">Home</a> |
-        <a href="profiles.html">Profiles</a> |
-        <a href="pricing.html">Pricing</a> |
-        <a href="booking.html">Booking</a> |
-        <a href="faq.html">FAQs</a> |
-        <a href="contact.html">Contact</a>
-    </nav>
+    <header>
+        <h1>Book a Companion</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="profiles.html">Profiles</a>
+            <a href="pricing.html">Pricing</a>
+            <a href="contact.html">Contact</a>
+            <a href="booking.html">Book Now</a>
+        </nav>
+    </header>
 
-    <form id="bookingForm">
-        <label for="companion">Choose Companion:</label>
-        <select id="companion" name="companion">
-            <option value="companion1">Companion 1</option>
-            <option value="companion2">Companion 2</option>
-            <option value="companion3">Companion 3</option>
-        </select>
+    <section class="booking-form">
+        <h2>Reserve Your Companion</h2>
+        <form action="https://formspree.io/f/your_form_id" method="POST">
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name" required>
 
-        <label for="date">Select Date:</label>
-        <input type="date" id="date" name="date" required>
+            <label for="email">Your Email:</label>
+            <input type="email" id="email" name="email" required>
 
-        <label for="time">Select Time:</label>
-        <input type="time" id="time" name="time" required>
+            <label for="companion">Choose a Companion:</label>
+            <select id="companion" name="companion" required>
+                <option value="Companion 1">Companion 1</option>
+                <option value="Companion 2">Companion 2</option>
+                <option value="Companion 3">Companion 3</option>
+            </select>
 
-        <label for="plan">Choose Plan:</label>
-        <select id="plan" name="plan">
-            <option value="basic">Basic (₹299)</option>
-            <option value="premium">Premium (₹499)</option>
-            <option value="elite">Elite (₹999)</option>
-        </select>
+            <label for="date">Booking Date:</label>
+            <input type="date" id="date" name="date" required>
 
-        <button type="submit">Proceed to Payment</button>
-    </form>
+            <label for="duration">Duration (Hours):</label>
+            <input type="number" id="duration" name="duration" min="1" max="10" required>
 
-    <script>
-        document.getElementById("bookingForm").addEventListener("submit", function(event) {
-            event.preventDefault();
-            alert("Redirecting to payment...");
-            window.location.href = "payment.html";
-        });
-    </script>
+            <button type="submit">Book Now</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Relationship Rental. All Rights Reserved.</p>
+    </footer>
 </body>
 </html>
