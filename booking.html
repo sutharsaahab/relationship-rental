@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Page Name</title>
+    <title>Book a Companion</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Welcome to the Page Name</h1>
+    <h1>Book a Companion</h1>
     <nav>
         <a href="index.html">Home</a> |
         <a href="profiles.html">Profiles</a> |
@@ -16,5 +16,37 @@
         <a href="faq.html">FAQs</a> |
         <a href="contact.html">Contact</a>
     </nav>
+
+    <form id="bookingForm">
+        <label for="companion">Choose Companion:</label>
+        <select id="companion" name="companion">
+            <option value="companion1">Companion 1</option>
+            <option value="companion2">Companion 2</option>
+            <option value="companion3">Companion 3</option>
+        </select>
+
+        <label for="date">Select Date:</label>
+        <input type="date" id="date" name="date" required>
+
+        <label for="time">Select Time:</label>
+        <input type="time" id="time" name="time" required>
+
+        <label for="plan">Choose Plan:</label>
+        <select id="plan" name="plan">
+            <option value="basic">Basic (₹299)</option>
+            <option value="premium">Premium (₹499)</option>
+            <option value="elite">Elite (₹999)</option>
+        </select>
+
+        <button type="submit">Proceed to Payment</button>
+    </form>
+
+    <script>
+        document.getElementById("bookingForm").addEventListener("submit", function(event) {
+            event.preventDefault();
+            alert("Redirecting to payment...");
+            window.location.href = "payment.html";
+        });
+    </script>
 </body>
 </html>
