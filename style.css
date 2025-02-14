@@ -267,3 +267,49 @@ footer {
 .booking-form button:hover {
     background: #e04360;
 }
+
+/* Hero Section */
+.hero {
+    background: url('https://source.unsplash.com/1600x900/?friends,dating') no-repeat center center/cover;
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+    position: relative;
+}
+
+.hero-content {
+    max-width: 600px;
+    margin: auto;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.hero h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 20px;
+    margin: 10px;
+    background: #ff4d6d;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+.btn-secondary {
+    background: #4d79ff;
+}
+
+.btn:hover {
+    opacity: 0.8;
+}
