@@ -221,3 +221,49 @@ footer {
 .contact-form button:hover {
     background: #e04360;
 }
+
+/* Booking Form */
+.booking-form {
+    text-align: center;
+    padding: 40px;
+}
+
+.booking-form h2 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.booking-form form {
+    max-width: 400px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.booking-form label {
+    text-align: left;
+    font-weight: bold;
+    margin: 10px 0 5px;
+}
+
+.booking-form input, 
+.booking-form select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.booking-form button {
+    background: #ff4d6d;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.booking-form button:hover {
+    background: #e04360;
+}
