@@ -148,4 +148,31 @@ button:hover {
 .profile-card button {
     width: 100%;
 }
+/* About Section */
+.about {
+    text-align: center;
+    padding: 40px;
+    background: #f8f8f8;
+}
+
+.about h2 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.about p {
+    color: #555;
+    font-size: 16px;
+    max-width: 600px;
+    margin: auto;
+}
+
+/* Footer */
+footer {
+    background: #222;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 20px;
+}
 
