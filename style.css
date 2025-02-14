@@ -119,3 +119,24 @@ footer {
     border-radius: 10px;
     text-align: center;  /* Ensures all text is centered */
 }
+
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+        text-align: center; /* Ensures text is centered */
+    }
+
+    /* Ensures sections stack properly */
+    .section {
+        display: block;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    /* Fix alignment for booking & contact pages */
+    #booking, #contact {
+        display: block;
+        width: 100%;
+        margin-top: 20px;
+    }
+}
